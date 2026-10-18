@@ -1,0 +1,8 @@
+console.log(typeof globalThis)
+console.log(typeof global)
+console.log(globalThis === global)
+console.log(typeof window)
+console.log(typeof document)
+console.log(typeof process)
+console.log(typeof setTimeout)
+console.log(typeof Buffer)
