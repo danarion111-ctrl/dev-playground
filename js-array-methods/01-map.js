@@ -16,3 +16,17 @@ const names = users.map( u => {
  return u.username})
 
 console.log(names)
+
+
+const messages  = [
+    { id: "m1", text: "Привет", sender: "Alex" },
+    { id: "m2", text: "Как дела?", sender: "Maria" },
+    { id: "m3", text: "Всё хорошо", sender: "Alex" }
+]
+
+const message = messages.map( m => ({
+    id: m.id ,
+    displayText:`${m.sender}: ${m.text}`
+}))
+
+console.log(message)
