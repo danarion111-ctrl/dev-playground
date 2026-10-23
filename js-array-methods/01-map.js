@@ -30,3 +30,16 @@ const message = messages.map( m => ({
 }))
 
 console.log(message)
+
+
+const participants = [
+    { username: "alex", age: 16 },
+    { username: "maria", age: 12 },
+    { username: "ion", age: 18 }
+];
+
+isAdult = participants.map(a =>({
+    username: a.username,
+    adult: a.age >= 18
+}))
+    console.log(isAdult)
