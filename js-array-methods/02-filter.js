@@ -19,3 +19,15 @@ const users = [
 const adultActiveUsers = users.filter(user =>user.isActive && user.age >= 18)
 console.log(adultActiveUsers)
 
+
+const products = [
+    { name: 'Phone', price: 800 },
+    { name: 'Case', price: 20 },
+    { name: 'Laptop', price: 1500 },
+    { name: 'Mouse', price: 50 }
+];
+
+const goodProducts =products.filter(prod => prod.price < 100)
+    .map(prod => prod.name)
+console.log(goodProducts);
+
