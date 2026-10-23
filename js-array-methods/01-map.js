@@ -43,3 +43,10 @@ isAdult = participants.map(a =>({
     adult: a.age >= 18
 }))
     console.log(isAdult)
+
+
+const myTasks = [ "Учиться", "Кодить", "Отдыхать" ]
+
+const numerotate = myTasks.map((task , index) =>`${index + 1}. ${task}`)
+
+console.log(numerotate)
