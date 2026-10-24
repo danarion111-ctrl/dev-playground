@@ -13,3 +13,15 @@ const tasks = ['Уроки', 'Уборка', 'Прогулка'];
 lastTask = tasks.pop()
 console.log(lastTask)
 console.log(tasks)
+
+//unshift()
+const players = ['Борис', 'Виктор'];
+const newPlayers = players.unshift('Глеб' , 'Даша')
+console.log(newPlayers)
+console.log(players)
+
+//shift()
+const orders = ['Заказ №1', 'Заказ №2', 'Заказ №3'];
+firstOrder = orders.shift()
+console.log(firstOrder)
+console.log(orders)
