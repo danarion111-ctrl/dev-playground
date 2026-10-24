@@ -8,3 +8,8 @@ result = nums.push(100)
 console.log(nums)
 console.log(result)
 
+//pop()
+const tasks = ['Уроки', 'Уборка', 'Прогулка'];
+lastTask = tasks.pop()
+console.log(lastTask)
+console.log(tasks)
