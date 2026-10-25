@@ -48,3 +48,10 @@ const position = animals.indexOf('тигр')
 if(position === - 1){
     console.log('Животное отсутствует')
 }
+
+//at()
+const scores = [12, 25, 38, 41, 56];
+console.log(scores.at(0))
+console.log(scores.at(-1))
+console.log(scores.at(-2))
+console.log(scores.at(10))
