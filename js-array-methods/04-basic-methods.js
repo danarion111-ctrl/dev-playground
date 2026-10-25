@@ -70,3 +70,11 @@ const letters = ['a', 'b', 'c', 'd'];
 const reversLetters = letters.reverse()
 console.log(letters)
 console.log(reversLetters)
+
+//join()
+const words = ['JavaScript', 'это', 'интересно'];
+const numbers = [10, 20, 30, 40];
+console.log(words)
+console.log(numbers)
+console.log(words.join(' ') + '!')
+console.log(numbers.join(' - ') + ' = ?')
