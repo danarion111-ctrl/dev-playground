@@ -1,12 +1,12 @@
 export {}
 
-function minCash(cash: number) {
+function maxCash(cash: number) {
     return cash + cash
 
 }
-console.log(minCash(67))
+console.log(maxCash(67))
 
 function repeatWord(word : string){
     return word + word;
 }
-console.log(repeatWord('Hello'))
+console.log(repeatWord('Hello '))
