@@ -55,3 +55,13 @@ console.log(scores.at(0))
 console.log(scores.at(-1))
 console.log(scores.at(-2))
 console.log(scores.at(10))
+
+//concat()
+const first = [1, 2, 3];
+const second = [4, 5];
+const third = [6, 7];
+allNumbers = first.concat(second , third);
+console.log(allNumbers);
+const bigFirst = first.concat(100)
+console.log(bigFirst)
+
