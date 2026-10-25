@@ -33,3 +33,18 @@ console.log(ingredients.includes('мука'))
 if(ingredients.includes('яйца')){
     console.log('Доступ разрешен')
 }
+
+//indexOf()
+const animals = [
+    'кот',
+    'собака',
+    'попугай',
+];
+
+console.log(animals.indexOf('попугай'))
+console.log(animals.indexOf('тигр'))
+console.log(animals.indexOf('собака'))
+const position = animals.indexOf('тигр')
+if(position === - 1){
+    console.log('Животное отсутствует')
+}
