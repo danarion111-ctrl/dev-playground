@@ -65,3 +65,8 @@ console.log(allNumbers);
 const bigFirst = first.concat(100)
 console.log(bigFirst)
 
+//reverse()
+const letters = ['a', 'b', 'c', 'd'];
+const reversLetters = letters.reverse()
+console.log(letters)
+console.log(reversLetters)
