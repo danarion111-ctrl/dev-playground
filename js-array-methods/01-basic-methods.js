@@ -25,3 +25,11 @@ const orders = ['Заказ №1', 'Заказ №2', 'Заказ №3'];
 firstOrder = orders.shift()
 console.log(firstOrder)
 console.log(orders)
+
+//includes()
+const ingredients = ['мука', 'молоко', 'яйца'];
+console.log(ingredients.includes('молоко'))
+console.log(ingredients.includes('мука'))
+if(ingredients.includes('яйца')){
+    console.log('Доступ разрешен')
+}
