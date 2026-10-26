@@ -20,3 +20,12 @@ if(idOfUser === undefined){
     console.log(idOfUser)
 }
 
+
+
+const nums = [5, 10, 15, 20, 25];
+const index = nums.findIndex(num => num === 15  );
+
+if(index !== undefined){
+    nums[index] = 100;
+}
+console.log(nums)
