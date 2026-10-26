@@ -57,3 +57,20 @@ const oldPurchases = purchases.slice(0 ,-historyLimit)
 
 console.log("Последние покупки:", recentPurchases);
 console.log("Старые покупки:", oldPurchases);
+
+
+const grades :number[] = [
+    6, 8, 10, 7, 9,
+    5, 10, 8, 6, 9,
+    10, 7, 8, 9, 10
+];
+const group = 5
+const group1 = grades.slice(0 , group)
+const group2 = grades.slice(group , 2*group)
+const group3 = grades.slice(group*2 , 3*group)
+
+const groups = [group1 , group2, group3];
+
+for(let i = 0 ; i < groups.length ; i++ ){
+    console.log(`Group ${i + 1} is ${groups[i]}`);
+}
