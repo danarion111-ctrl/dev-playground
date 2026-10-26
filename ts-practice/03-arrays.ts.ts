@@ -19,3 +19,4 @@ const passingScores = scores
 
 
 console.log(passingScores);
+
