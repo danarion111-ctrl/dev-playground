@@ -37,3 +37,23 @@ const page3 = users.slice(pageSize*2, pageSize*3)
 console.log(page1)
 console.log(page2)
 console.log(page3)
+
+
+const purchases :string[] = [
+    "Книга",
+    "Рюкзак",
+    "Наушники",
+    "Мышь",
+    "Клавиатура",
+    "Монитор",
+    "Микрофон",
+    "Камера"
+];
+
+
+const historyLimit = 3
+const recentPurchases = purchases.slice(-historyLimit)
+const oldPurchases = purchases.slice(0 ,-historyLimit)
+
+console.log("Последние покупки:", recentPurchases);
+console.log("Старые покупки:", oldPurchases);
