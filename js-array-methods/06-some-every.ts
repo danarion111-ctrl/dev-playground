@@ -28,3 +28,19 @@ console.log(products.every(prod => prod.inStock === true))
 console.log(products.some(prod => prod.inStock === true && prod.price > 100));
 console.log(products.every(prod => prod.price > 20 && prod.price < 1000));
 
+
+interface student{
+    name: string;
+    grades: number[]
+}
+const students : student[] = [
+    { name: "Alex", grades: [8, 9, 7] },
+    { name: "Maria", grades: [10, 9, 10] },
+    { name: "Ion", grades: [4, 6, 5] },
+    { name: "Elena", grades: [7, 8, 9] }
+];
+
+console.log(students.some(stud => stud.grades.some(grade => grade >= 8)))
+console.log(students.some(stud => stud.grades.some(grade => grade < 5)))
+console.log(students.some(stud => stud.grades.every(grade => grade <= 5 ) && stud.grades.some(grade=> grade === 10)))
+
