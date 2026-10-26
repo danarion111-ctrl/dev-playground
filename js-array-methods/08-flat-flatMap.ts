@@ -33,4 +33,20 @@ const orders : order[] = [
 const allItems = orders.flatMap(item => item.items)
 console.log(allItems)
 
+interface user {
+    name: string;
+    hobbies: string[];
+}
+const users : user[] = [
+    { name: "Анна", hobbies: ["Чтение", "Музыка"] },
+    { name: "Иван", hobbies: ["Спорт"] },
+    { name: "Марк", hobbies: ["Игры", "Программирование", "Музыка"] }
+];
+
+const allHobbies = users.flatMap(user => user.hobbies)
+const hobbiesTwice = allHobbies.flatMap(hobby => [hobby , hobby])
+
+console.log("allHobbies:", allHobbies);
+console.log("hobbiesTwice:", hobbiesTwice);
+
 
