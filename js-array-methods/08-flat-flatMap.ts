@@ -50,3 +50,14 @@ console.log("allHobbies:", allHobbies);
 console.log("hobbiesTwice:", hobbiesTwice);
 
 
+const data: (number | number[])[][] = [
+    [1, 2],
+    [3, [4, 5]],
+    [[6, 7], 8]
+];
+
+const levelOne = data.flat()
+const fullyFlat = data.flat(Infinity)
+console.log(data)
+console.log(levelOne);
+console.log(fullyFlat);
