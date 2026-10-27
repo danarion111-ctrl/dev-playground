@@ -27,3 +27,17 @@ for(let i:number = numbers.length -1 ; i>= 0 ; i--){
     }
 }
 console.log(numbers);
+
+
+
+const tasks:string[] = ["Учёба", "Игры", "Уборка", "Прогулка", "Сон"];
+const gamesIndex:number = tasks.indexOf("Игры")
+if(gamesIndex > -1){
+    tasks.splice(gamesIndex ,1 )
+}
+const sleepIndex:number = tasks.indexOf("Сон")
+if(sleepIndex > -1){
+    tasks.splice(sleepIndex , 0 ,  "Спорт" , "Чтение")
+}
+
+console.log(tasks)
