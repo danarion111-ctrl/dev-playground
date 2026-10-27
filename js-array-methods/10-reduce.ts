@@ -25,6 +25,13 @@ return acc;
 console.log(adults);
 
 
+const numbers3:number[] = [3, 8, 11, 6, 4, 7, 10];
+const sumEven:number = numbers3.reduce((acc , num)=>{
+    return acc + (num % 2 === 0 ? num : 0)
+} , 0)
+console.log(sumEven);
+
+
 interface Expense {
     category:string;
     amount:number;
