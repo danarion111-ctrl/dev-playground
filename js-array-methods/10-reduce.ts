@@ -32,6 +32,14 @@ const sumEven:number = numbers3.reduce((acc , num)=>{
 console.log(sumEven);
 
 
+const numbers4:number[] = [14, 52, 7, 89, 36, 41];
+const biggestNum: number = numbers4.reduce((acc, num) =>{
+   return acc > num ? acc : num
+    } , numbers4[0]
+)
+console.log(biggestNum);
+
+
 interface Expense {
     category:string;
     amount:number;
