@@ -107,6 +107,31 @@ const sortGrades =grades.reduce((acc , grade)=>{
 console.log(sortGrades);
 
 
+interface Transaction{
+    type:string,
+    amount:number,
+}
+const transactions: Transacrition[] = [
+    { type: "income", amount: 500 },
+    { type: "expense", amount: 120 },
+    { type: "income", amount: 300 },
+    { type: "expense", amount: 80 },
+    { type: "expense", amount: 50 }
+];
+
+const value = transactions.reduce((acc , cur) =>{
+    if(cur.type === 'expense'){
+        acc -= cur.amount
+    }
+    else{
+        acc  += cur.amount
+    }
+    return acc;
+}, 0)
+console.log(value)
+
+
+
 
 function getExpense(items:Expense[])  {
     return items.reduce((acc , item) => {
