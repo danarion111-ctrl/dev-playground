@@ -40,11 +40,37 @@ const biggestNum: number = numbers4.reduce((acc, num) =>{
 console.log(biggestNum);
 
 
-const prices = [120, 45, 300, 80, 55];
-const pricesSum = prices.reduce((acc , price)=>{
+const prices:number[] = [120, 45, 300, 80, 55];
+const pricesSum:number = prices.reduce((acc , price) =>{
     return acc + (price >= 100 ? price : 0)
 } , 0)
 console.log(pricesSum);
+
+interface Employee{
+    name: string,
+    salary: number
+}
+const employees: Employee[] = [
+    { name: "Alex", salary: 1200 },
+    { name: "Maria", salary: 1800 },
+    { name: "Ion", salary: 1500 }
+];
+const salaries = employees.reduce((acc , money)=>{
+    return acc + money.salary
+} , 0)
+console.log(salaries);
+
+
+const fruits:string[] = [
+    "apple", "banana", "apple",
+    "orange", "banana", "apple"
+];
+const fruitGroups = fruits.reduce((acc , fruit)=>{
+    acc[fruit] = (acc[fruit] || 0) + 1
+    return acc;
+
+}, {} as Record<string, number>);
+console.log(fruitGroups);
 
 interface Expense {
     category:string;
