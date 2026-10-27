@@ -72,6 +72,16 @@ const fruitGroups = fruits.reduce((acc , fruit)=>{
 }, {} as Record<string, number>);
 console.log(fruitGroups);
 
+
+
+const words = ["Я", "изучаю", "JavaScript"];
+const text = words.reduce((acc ,word)=>{
+    return acc ? acc + ' ' + word : word
+} , '')
+console.log(text);
+
+
+
 interface Expense {
     category:string;
     amount:number;
