@@ -82,18 +82,7 @@ console.log(text);
 
 
 
-interface Expense {
-    category:string;
-    amount:number;
-}
-const expenses : Expense[] = [
-    { category: "food", amount: 250 },
-    { category: "transport", amount: 100 },
-    { category: "food", amount: 180 },
-    { category: "games", amount: 500 },
-    { category: "transport", amount: 70 },
-    { category: "food", amount: 120 }
-];
+
 
 
 
@@ -111,7 +100,7 @@ interface Transaction{
     type:string,
     amount:number,
 }
-const transactions: Transacrition[] = [
+const transactions: Transaction[] = [
     { type: "income", amount: 500 },
     { type: "expense", amount: 120 },
     { type: "income", amount: 300 },
@@ -133,6 +122,19 @@ console.log(value)
 
 
 
+interface Expense {
+    category:string;
+    amount:number;
+}
+const expenses : Expense[] = [
+    { category: "food", amount: 250 },
+    { category: "transport", amount: 100 },
+    { category: "food", amount: 180 },
+    { category: "games", amount: 500 },
+    { category: "transport", amount: 70 },
+    { category: "food", amount: 120 }
+];
+
 function getExpense(items:Expense[])  {
     return items.reduce((acc , item) => {
         acc.total += item.amount;
@@ -141,3 +143,19 @@ function getExpense(items:Expense[])  {
     } ,{total: 0} as Record<string, number> )}
 
     getExpense(expenses);
+
+
+const products = [
+    { name: "Phone", category: "electronics" },
+    { name: "Laptop", category: "electronics" },
+    { name: "Bread", category: "food" },
+    { name: "Milk", category: "food" },
+    { name: "Table", category: "furniture" }
+];
+
+const reMakeArr = products.reduce((acc , prod) => {
+    acc[prod.category] = acc[prod.category] || [];
+    acc[prod.category].push(prod.name);
+    return acc;
+}, {} as Record<string, string[]> )
+console.log(reMakeArr)
