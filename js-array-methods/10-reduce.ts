@@ -1,5 +1,11 @@
 export{}
 
+const numbers:number[]  = [4, 7, 2, 9, 3];
+const sum:number = numbers.reduce((acc , num) => {
+    return acc + num;
+} , 0)
+console.log(sum);
+
 interface Expense {
     category:string;
     amount:number;
