@@ -6,11 +6,24 @@ const sum:number = numbers.reduce((acc , num) => {
 } , 0)
 console.log(sum);
 
+
+
 const numbers2:number[] = [2, 3, 4, 5];
 const multiplication:number = numbers2.reduce((acc , num) =>{
     return acc*num ;
 } , 1)
 console.log(multiplication);
+
+
+const ages:number[] = [12, 18, 25, 14, 31, 17, 20];
+const adults:number = ages.reduce((acc , person)=>{
+    if(person >= 18){
+        acc = acc+1
+    }
+return acc;
+    } , 0)
+console.log(adults);
+
 
 interface Expense {
     category:string;
