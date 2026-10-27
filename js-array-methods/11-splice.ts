@@ -5,15 +5,25 @@ shopping.splice(2 ,1 , "Бананы")
 console.log(shopping)
 
 
-const grades = [3, 4, 2, 5, 3, 4];
+const grades:number[] = [3, 4, 2, 5, 3, 4];
 grades.splice(1 ,3 , 5 , 5)
 console.log(grades)
 
 
 
-const names = ["Ира", "Максим", "Оля", "Максим", "Дима"];
-const index = names.indexOf("Максим");
+const names:string[] = ["Ира", "Максим", "Оля", "Максим", "Дима"];
+const index:number = names.indexOf("Максим");
 if(index > -1){
     names.splice(index, 1);
 }
 console.log(names)
+
+
+
+const numbers:number[] = [12, -4, 0, -7, 8, -1, 5];
+for(let i:number = numbers.length -1 ; i>= 0 ; i--){
+    if(numbers[i] < 0){
+        numbers.splice(i,1);
+    }
+}
+console.log(numbers);
