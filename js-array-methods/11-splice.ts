@@ -41,3 +41,10 @@ if(sleepIndex > -1){
 }
 
 console.log(tasks)
+
+
+
+const letters:string[] = ["A", "B", "C", "D", "E"];
+const deletedLetters = letters.splice(1 ,2)
+const newLetters:string[] = letters.concat(deletedLetters)
+console.log(newLetters)
