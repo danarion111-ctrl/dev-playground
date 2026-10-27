@@ -95,6 +95,19 @@ const expenses : Expense[] = [
     { category: "food", amount: 120 }
 ];
 
+
+
+const grades:number[] = [10, 7, 9, 6, 8, 10, 5];
+const sortGrades =grades.reduce((acc , grade)=>{
+    acc.sum += grade
+    acc.count += 1
+    acc.max = acc.max > grade ? acc.max : grade
+    return acc;
+} , {sum : 0 , count : 0 , max : grades[0]} )
+console.log(sortGrades);
+
+
+
 function getExpense(items:Expense[])  {
     return items.reduce((acc , item) => {
         acc.total += item.amount;
