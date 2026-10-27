@@ -40,6 +40,12 @@ const biggestNum: number = numbers4.reduce((acc, num) =>{
 console.log(biggestNum);
 
 
+const prices = [120, 45, 300, 80, 55];
+const pricesSum = prices.reduce((acc , price)=>{
+    return acc + (price >= 100 ? price : 0)
+} , 0)
+console.log(pricesSum);
+
 interface Expense {
     category:string;
     amount:number;
