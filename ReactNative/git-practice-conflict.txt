@@ -1,1 +1,1 @@
-value=main-version
+value=resolved-main-feature
