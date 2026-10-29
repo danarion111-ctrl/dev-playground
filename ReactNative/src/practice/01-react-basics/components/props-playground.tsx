@@ -11,6 +11,12 @@ type ProductProps= {
     category: string;
 }
 
+type MessageProps ={
+    author:string;
+    text:string;
+    time:string;
+}
+
 
 
 function UserCard({name , status}: UserCardProps) {
@@ -35,6 +41,16 @@ function Product(props: ProductProps) {
 
 }
 
+function Message(props:MessageProps){
+    return(
+        <View>
+            <Text>{props.author}</Text>
+            <Text>{props.text}</Text>
+            <Text>{props.time}</Text>
+        </View>
+    )
+}
+
 
 
 export default function PropsPlayground(){
@@ -49,7 +65,7 @@ export default function PropsPlayground(){
                 <Product title={'Phone'} price={500} category={'electronics'}/>
             </View>
 
-
+            <Message author={'Saul Goodman'} text={'Jesse , we need to cook'} time={'3:00 PM'}/>
         </View>
     )
 }
