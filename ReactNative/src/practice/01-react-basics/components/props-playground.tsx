@@ -1,57 +1,7 @@
 import { Text, View } from 'react-native';
-
-type UserCardProps = {
-    name: string;
-    status: string;
-}
-
-type ProductProps= {
-    title: string ;
-    price: number;
-    category: string;
-}
-
-type MessageProps ={
-    author:string;
-    text:string;
-    time:string;
-}
-
-
-
-function UserCard({name , status}: UserCardProps) {
-    return (
-    <View>
-        <Text>{name}</Text>
-        <Text>{status}</Text>
-    </View>)
-}
-
-
-
-
-function Product(props: ProductProps) {
-    return (
-        <View>
-            <Text>{props.title}</Text>
-            <Text>{props.price}</Text>
-            <Text>{props.category}</Text>
-        </View>
-    )
-
-}
-
-function Message(props:MessageProps){
-    return(
-        <View>
-            <Text>{props.author}</Text>
-            <Text>{props.text}</Text>
-            <Text>{props.time}</Text>
-        </View>
-    )
-}
-
-
+import{UserCard} from "@/practice/01-react-basics/components/myComponents/UserCard";
+import{Message} from "@/practice/01-react-basics/components/myComponents/Message";
+import{Product} from "@/practice/01-react-basics/components/myComponents/Product";
 
 export default function PropsPlayground(){
     return (
