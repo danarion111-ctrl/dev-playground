@@ -1,3 +1,6 @@
+import type {ReactNode} from "react";
+import {StyleProp ,ViewStyle} from "react-native";
+
 export type UserCardProps = {
     name: string;
     status: string;
@@ -14,3 +17,9 @@ export type MessageProps = {
     text: string;
     time: string;
 };
+
+export type InfoBoxProps = {
+    title: string;
+    style?:StyleProp<ViewStyle>;
+    children: ReactNode;
+}

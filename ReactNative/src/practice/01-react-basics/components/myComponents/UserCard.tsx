@@ -1,5 +1,5 @@
 import {Text  ,View} from 'react-native'
-import {UserCardProps} from "@/practice/01-react-basics/components/types/types";
+import {UserCardProps} from "@/practice/01-react-basics/components/myComponents/types/types";
 
 export function UserCard({name , status}:UserCardProps){
     return(
