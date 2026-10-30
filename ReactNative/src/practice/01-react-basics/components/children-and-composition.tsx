@@ -6,8 +6,8 @@ export default function App (){
     return(
         <View style = { styles.screen }>
             <InfoBox style = {styles.box} title={'User'} >
-                <Text style = {styles.title}>Name:Alex</Text>
-                <Text style = {styles.title}>Status: online</Text>
+                <Text style = {styles.title}>Name:Alex </Text>
+                <Text style = {styles.title}> Status: online</Text>
             </InfoBox>
 
             <InfoBox style ={styles.box} title={'Message'} >

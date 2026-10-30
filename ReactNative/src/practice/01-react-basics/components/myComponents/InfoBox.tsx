@@ -1,5 +1,5 @@
 import { View , Text} from 'react-native';
-import {InfoBoxProps} from "@/practice/01-react-basics/components/myComponents/types/types";
+import {InfoBoxProps} from "@/practice/01-react-basics/components/myComponents/types";
 import { styles } from '../children-and-composition.styles';
 
 export function InfoBox({title , children , style}:InfoBoxProps){

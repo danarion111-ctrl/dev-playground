@@ -1,5 +1,5 @@
 import {Text ,View} from 'react-native';
-import {ProductProps} from "@/practice/01-react-basics/components/myComponents/types/types";
+import {ProductProps} from "@/practice/01-react-basics/components/myComponents/types";
 
 export function Product({title , price , category}:ProductProps) {
     return(

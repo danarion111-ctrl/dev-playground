@@ -71,7 +71,7 @@ const SECTIONS: Section[] = [
       {
         name: 'data-flow',
         topics: [
-          topic('От родителя к ребёнку', () => require('@/practice/01-react-basics/data-flow/parent-to-child')),
+          topic('От родителя к ребёнку', () => require('@/practice/01-react-basics/data-flow/parent-to-child.styles')),
           topic('Переиспользуемый UI', () => require('@/practice/01-react-basics/data-flow/reusable-ui')),
         ],
       },
