@@ -26,3 +26,37 @@ export function Notification(){
         </View>
     )
 }
+
+
+export function ChatMessage(){
+    const isLoading = false;
+    const messages = [
+        'Hi' , ' Hello' , 'Bye'
+    ]
+    if(isLoading){
+        return(
+            <View>
+                <Text>Загрузка...</Text>
+            </View>
+
+        )}
+        if(messages.length === 0){
+            return(
+                <View>
+                    <Text>Сообщений пока нет</Text>
+                </View>
+            )
+        }else{
+            return(
+                <View>
+                    <Text>Ваши сообщения:</Text>
+                    {messages.map((message , index)=>(
+                        <Text key ={index}> {message}</Text>
+                    ))}
+                </View>
+            )
+
+
+    }
+
+}
