@@ -15,3 +15,15 @@ const users:string[] = [
 ];
 const admins:string[] = users.filter(user => user.startsWith("admin"));
 console.log(admins);
+
+
+const links = [
+    "https://google.com",
+    "http://example.com",
+    "https://github.com",
+    "ftp://files.com",
+    "https://nodejs.org"
+];
+
+const secureLinks:string[] = links.filter(link => link.startsWith("https://"));
+console.log(secureLinks);
