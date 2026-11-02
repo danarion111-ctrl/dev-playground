@@ -1,6 +1,4 @@
-import {filter} from "minimatch";
-
-const email = "admin@gmail.com";
+const email:string = "admin@gmail.com";
 console.log(email.startsWith('admin'))
 
 const website = "https://google.com";
