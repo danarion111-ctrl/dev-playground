@@ -1,3 +1,5 @@
+export{}
+
 const files = [
     "avatar.png",
     "document.pdf",
