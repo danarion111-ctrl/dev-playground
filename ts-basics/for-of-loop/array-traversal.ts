@@ -1,6 +1,6 @@
 export {}
 
-const array:number[]=[1, 6 ,-9 , 112 ,67 ,-1 ,0]
+const array:number[]=[1, 6 ,-9 , 115 ,67 ,-1 ,0]
 
 function analyzeNumbers(){
     let positive = 0;
@@ -29,3 +29,29 @@ function analyzeNumbers(){
 analyzeNumbers();
 
 
+const nums = [ 3 ,7 , 9 , -18 , 199 , 3456]
+function getMultiplesOfThree(){
+    let multiplesOfThree = []
+    let notMultipliesOfThree = []
+    let goodNums = 0
+    let badNums = 0
+    for(const num of nums){
+        if(num %3 === 0){
+            multiplesOfThree.push(num) ;
+            goodNums ++
+        }
+        else{
+            notMultipliesOfThree.push(num)
+            badNums ++
+        }
+    }
+    console.log(
+        `All nums: ${nums},
+        Divisible by 3: ${multiplesOfThree},
+        Not divisible by 3: ${notMultipliesOfThree},
+        Found ${goodNums} numbers divisible by 3,
+        Found ${badNums} numbers not divisible by 3
+    `)
+}
+
+getMultiplesOfThree();
