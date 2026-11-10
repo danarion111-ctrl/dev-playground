@@ -1,6 +1,6 @@
 export{}
 
-const registeredUsers = [
+const registeredUsers:string[] = [
     "Alex",
     "Daniel",
     "Maria",
@@ -12,3 +12,32 @@ function isUserRegistered(users:string[] , user:string){
 }
 console.log(isUserRegistered(registeredUsers, "Maria"))
 console.log(isUserRegistered(registeredUsers, "Andrew"))
+
+
+const allFeatures:string[] = [
+    "Dark mode",
+    "Notifications",
+    "Cloud sync",
+    "Offline mode",
+    "Automatic backup",
+];
+
+const enabledFeatures:string[] = [
+    "Dark mode",
+    "Cloud sync",
+];
+
+function findUnselectedFeatures(){
+    const enabledSet= new Set(enabledFeatures);
+    const result = []
+
+    for(let feature of allFeatures){
+        if(!enabledSet.has(feature)){
+            result.push(feature);
+        }
+    }
+    return result;
+
+}
+
+console.log(findUnselectedFeatures());
