@@ -1,11 +1,11 @@
 export{}
-const currentMembers = [
+const currentMembers:string[] = [
     "Alex",
     "Daniel",
     "Maria",
 ];
 
-const incomingMembers = [
+const incomingMembers: string[] = [
     "Maria",
     "Andrew",
     "Sofia",
@@ -24,3 +24,37 @@ function addNewMembers(current:string[] , incoming:string[]){
 }
 
 console.log(addNewMembers(currentMembers, incomingMembers));
+
+
+
+
+
+const selectedCategories:string[] = [
+    "Programming",
+    "Music",
+    "Games",
+    "Books",
+];
+
+const blockedCategories:string[] = [
+    "Music",
+    "Books",
+    "Travel",
+];
+
+function  removeBlockedCategories(select:string[] , block:string[]){
+    const selected = new Set(select);
+    let removedCount = 0
+
+
+    for( let category of block){
+        if( selected.delete(category)){
+            removedCount++;
+        }
+
+    }
+
+    return {categories: Array.from(selected) ,
+    removedCount
+}}
+console.log(removeBlockedCategories(selectedCategories, blockedCategories));
