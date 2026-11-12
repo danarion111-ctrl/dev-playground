@@ -24,3 +24,37 @@ function analyzeDuplicateNames(namesArray:string[]){
 }
 
 console.log(analyzeDuplicateNames(names))
+
+
+const firstCatalog:string[] = [
+    "Phone",
+    "Laptop",
+    "Tablet",
+    "Phone",
+    "Monitor",
+];
+
+const secondCatalog:string[] = [
+    "Keyboard",
+    "Mouse",
+    "Monitor",
+    "Keyboard",
+];
+
+
+function compareCatalogSizes(first:string[] , second:string[]){
+    const catalogNrOne = new Set(first);
+    const catalogNrTwo = new Set(second);
+
+    let firstUniqueCount = catalogNrOne.size;
+    let secondUniqueCount = catalogNrTwo.size;
+    let sameUniqueCount = firstUniqueCount === secondUniqueCount;
+
+
+    return {
+        first : firstUniqueCount,
+        second : secondUniqueCount,
+        same : sameUniqueCount
+    }
+}
+console.log(compareCatalogSizes(firstCatalog , secondCatalog));
