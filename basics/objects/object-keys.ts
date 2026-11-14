@@ -16,3 +16,26 @@ console.log(getFilledFields({
     phone: "   ",
     country: "Moldova",
 }))
+
+
+
+const oldSettings = {
+    theme: "dark",
+    language: "ru",
+    notifications: true,
+    fontSize: 14,
+};
+
+const newSettings = {
+    theme: "light",
+    language: "ru",
+    notifications: false,
+    fontSize: 14,
+};
+function getChangeKeys(
+    before: Record<string, string | number | boolean>,
+    after: Record<string, string | number | boolean>,
+){
+    return Object.keys(before).filter(key => before[key] !== after[key]);
+}
+console.log(getChangeKeys(oldSettings, newSettings));
