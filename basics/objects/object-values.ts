@@ -36,3 +36,24 @@ console.log(getScoreStats({
     Maria: 100,
     Daniel: 70,
 }))
+
+
+const inventory = {
+    keyboard: { price: 80, quantity: 3 },
+    mouse: { price: 25, quantity: 5 },
+    monitor: { price: 200, quantity: 2 },
+};
+
+function calculateInventoryValue(
+    inventory: Record<string, {
+        price:number,
+        quantity:number,
+    }>
+){
+return Object.values(inventory).reduce((acc , value)=> {
+    acc += value.price * value.quantity
+    return acc
+} , 0 )
+
+}
+console.log(calculateInventoryValue(inventory));
