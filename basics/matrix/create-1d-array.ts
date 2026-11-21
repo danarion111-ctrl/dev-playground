@@ -25,3 +25,4 @@ function createActivityMask(
     return array
 }
 console.log(createActivityMask(10 , 2 , 8))
+

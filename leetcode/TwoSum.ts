@@ -12,6 +12,8 @@ function twoSum(nums: number[] , target: number) {
         const previousIndex = seen.get(needed);
 
         if(previousIndex !== undefined){
+            return [previousIndex, i];
+
         }
     seen.set(currentNum, i);
     }
@@ -19,3 +21,5 @@ function twoSum(nums: number[] , target: number) {
 }
 
 console.log(twoSum(nums , 9))
+
+
