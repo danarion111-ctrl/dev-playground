@@ -14,10 +14,10 @@ type ProductPreviewProps = {
 
 export default function ProductPreview({
                                            product,
-                                           onBuy,}: ProductPreviewProps) {
+                                           onBuy,
+                                       }: ProductPreviewProps) {
     return (
-        <View>
-            <View>
+        <View style={styles.container}>
                 <Text style={styles.name}>
                     {product.name}
                 </Text>
@@ -35,15 +35,15 @@ export default function ProductPreview({
                 ) : (
                     <Text>Нет в наличии</Text>
                 )}
-            </View>
-
             <Pressable
                 onPress={onBuy}
                 disabled={!product.inStock}
                 style={styles.button}
             >
-                Купить
+                <Text>Купить</Text>
             </Pressable>
-        </View>
+
+            </View>
+
     )
 }
